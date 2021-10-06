@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "script.js" defer></script>
+    <title>Budget Tracking App</title>
+</head>
+<body>
+
+    
+  <style>
+    *{
+       padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+    body{
+      padding:5em;
+      background:#2980b9;
+      font-family: 'Roboto', sans-serif;
+       background-position: center;
+      background-size:100% 100%;
+      background-repeat: no-repeat;
+     }
+    .main{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+    .box{
+      line-height: 3em;
+      padding:3em;
+      background:#bdc3c7;
+      border:2px solid #16a085;
+    }
+    .box h1{
+      color:#2c3e50;
+      font-style:italic;
+    }
+    input[type="number"]{
+      padding:0.5em 1.5em 0.5em 1.5em;
+      border:#27ae60;
+      
+    }
+    input[type="text"]{
+      padding:0.5em 1.5em 0.5em 1.5em;
+      border:#27ae60;
+    }
+    #btn{
+      padding:0.5em 1.7em 0.5em 1.7em;
+      background:#1abc9c;
+      color:#ffff;
+    }
+    #btn:hover{
+      background:#e74c3c;
+      cursor:pointer;
+    }
+    .total{
+      display: flex;
+      justify-content: center;
+      gap:30px;
+    }
+    /* .total1{
+      display: flex;
+      justify-content: center;
+      gap:20px;
+    
+    } */
+    .box1{
+      padding:3em;
+      line-height: 3em;
+      color:#34495e;
+      font-style:italic;
+      font-size:1.5em;
+    
+    }
+    .total{
+    
+       font-size:1.5em;
+    }
+     
+      .container{
+        text-align: center;
+        margin: auto;
+        padding:2em;
+      }
+        #add{
+          padding:0.5em 1.7em 0.5em 1.7em;
+      background:#1abc9c;
+      color:#ffff;
+      
+        }
+        #booklist{
+          font-size: 1.5em;
+          color:#7f8c8d;
+        }
+     </style>
+     <body>
+       <div class="container">
+         <div class="main">
+         <h1>BUDGET APP</h1>
+         </div>
+         <div class="box">
+           <h1>Please Enter Your Budget</h1>
+           <input type = "number" id = "field"><p></p>
+           <button id = "btn" >Calculate</button>
+          <div class="total">
+           <p>Budget : </p><br>
+           <p id = "budget">$0</p>
+           <p>Expenses : </p><br>
+           <p id = "expenses">$0</p>
+           <p>Balance : </p><br>
+           <p id = "balance">$0</p>
+          </div>
+          </div>
+         <div class="box1">
+           <p>Please Enter Your Expense Product</p>
+           <input type = 'text' id = "item"><p></p>
+           <p>Please Enter Expense Amount</p>
+           <input type = "number" id = "Eamn"><p></p>
+           <button id = "add">Add Expense</button>
+           </div>
+     
+            <table style="width:100%">
+              <tbody id = "booklist">
+               <tr>
+      
+                 <th>Expense Title</th>
+                 <th id = "expensetitle"></th>
+    
+                  <th>Expense Value</th>
+                 <th id = "expenseValue"></th>
+    
+                <th>Delete Items</th>
+     
+                <!-- <th id = "add"></th> -->
+              <!-- <th><button id = "delete"></button></th> -->
+     
+          </tr>
+    
+               </table>
+          </tbody>
+ 
+    </body>
+</html>
